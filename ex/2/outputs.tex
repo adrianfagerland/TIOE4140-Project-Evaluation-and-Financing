@@ -1,0 +1,291 @@
+    \section{1}\label{section}
+
+\subsection{(a)}\label{a}
+
+\begin{itemize}
+\tightlist
+\item
+  For \(S_T = \$38\): Payoff \(= 48 - 38 = \$10\)
+\item
+  For \(S_T = \$43\): Payoff \(= 48 - 43 = \$5\)
+\item
+  For \(S_T = \$48\): Payoff \(= 48 - 48 = \$0\)
+\item
+  For \(S_T = \$53\): Payoff \(= 48 - 53 = -\$5\)
+\item
+  For \(S_T = \$58\): Payoff \(= 48 - 58 = -\$10\)
+\end{itemize}
+
+The payoffs for the short forward position are
+\(\boxed{\$10, \$5, \$0, -\$5, -\$10}\) for spot prices of
+\(\boxed{\$38, \$43, \$48, \$53, \$58}\) respectively.
+
+\subsection{(b)}\label{b}
+
+For a long put option with a strike price \(K = \$48\), the payoff at
+maturity is given by \(\max(K - S_T, 0)\).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{If \(S_T = \$38\):} Payoff =
+  \(\max(48 - 38, 0) = \max(10, 0) = \$10\)
+\item
+  \textbf{If \(S_T = \$43\):} Payoff =
+  \(\max(48 - 43, 0) = \max(5, 0) = \$5\)
+\item
+  \textbf{If \(S_T = \$48\):} Payoff =
+  \(\max(48 - 48, 0) = \max(0, 0) = \$0\)
+\item
+  \textbf{If \(S_T = \$53\):} Payoff =
+  \(\max(48 - 53, 0) = \max(-5, 0) = \$0\)
+\item
+  \textbf{If \(S_T = \$58\):} Payoff =
+  \(\max(48 - 58, 0) = \max(-10, 0) = \$0\)
+\end{itemize}
+
+\subsection{(c)}\label{c}
+
+Comparing the payoffs, we see that for spot prices at or below \$48, the
+payoffs are the same for both the short forward and long put. However,
+for spot prices above \$48, the short forward position leads to negative
+payoffs (losses), while the long put option payoff is capped at \$0,
+preventing further losses below \$0.
+
+The long put option should be more expensive than the short forward
+contract (considering the premium for the put option and zero initial
+cost for the forward). This is because the long put option provides
+downside protection that the short forward does not. The put option
+limits losses when the spot price increases above the strike price
+(\$48), whereas the short forward position has unlimited potential
+losses as the spot price rises. Investors are willing to pay a premium
+for the limited downside risk offered by the put option compared to the
+unlimited risk exposure of a short forward position beyond the agreed
+forward price. Therefore, to acquire the downside protection inherent in
+the put option, one must pay a premium, making it ``more expensive'' in
+terms of upfront cost or value compared to entering a short forward
+contract at no initial cost but with unbounded potential loss.
+
+In summary, the long put is more expensive because it offers limited
+downside risk, unlike the short forward position.
+
+    \section{2}\label{section}
+
+\subsection{(a)}\label{a}
+
+The forward curve shows an initial upward trend from December Year 0 to
+June Year 1, likely due to the cost of carry (interest and storage)
+increasing with time, and potentially expectations of rising spot
+prices. The significant drop in September Year 1 could be attributed to
+seasonality in widget supply or demand, or a specific market event
+expected to lower prices around that time. The curve then resumes an
+upward trend from September Year 1 to June Year 3, indicating that
+longer-term factors like cost of carry and general price appreciation
+expectations dominate again after the short-term anomaly in September.
+
+\subsection{(b)}\label{b}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Initial Investment (Year 0 December): Assume spot price
+  \(S_0 = \$3.00\).
+\item
+  Revenue at Close (March Year 1): Forward price
+  \(F_{0,0.25} = \$3.075\).
+\item
+  Storage Cost (at Year 1 March): \(\$0.03\).
+\item
+  Net Cash Inflow at Year 1 March: \(\$3.075 - \$0.03 = \$3.045\).
+\item
+  Return over 3 months:
+  \(\frac{\$3.045 - \$3.00}{\$3.00} = 0.015 = 1.5\%\).
+\item
+  Annualized continuously compounded rate of return:
+  \(\frac{\ln(1.015)}{0.25} \approx 5.96\%\).
+\end{enumerate}
+
+Yes, the annualized rate of return of approximately \(\boxed{5.96\%}\)
+is sensible. It is very close to the risk-free interest rate of 6\%,
+which is expected in an efficient market for a cash-and-carry strategy,
+after accounting for storage costs. The slight difference is likely due
+to rounding or minor market frictions not considered.
+
+    \section{3}\label{section}
+
+\subsection{(a)}\label{a}
+
+In this situation, the lease rate for widgets would likely be very close
+to zero. Because widgets don't deteriorate and storage is free,
+merchants can keep a large supply at no cost. Since they can adjust
+production, they can easily replace any lent widgets. Lending doesn't
+really cost them anything. With many merchants able to lend, competition
+would push the lease rate down to almost zero.
+
+\subsection{(b)}\label{b}
+
+Even with seasonal demand, the lease rate will probably stay low on
+average, but it might change a little with the seasons. The basic
+reasons for a low rate still apply: cheap storage and flexible
+production. During high demand seasons, borrowing widgets to short sell
+might increase, so merchants could maybe charge a slightly higher lease
+rate then. But, because supply can adjust and storage is cheap, these
+changes would probably be small, and the average lease rate would be
+near zero.
+
+\subsection{(c)}\label{c}
+
+This changes things a lot. The lease rate will now likely change with
+the seasons and be more up and down. When demand is high but production
+is fixed, widgets become less available. Merchants lose more by lending
+widgets when they could be selling them at higher prices. So, the lease
+rate will likely go up a lot during peak demand times. When demand is
+low, merchants might be more willing to lend at a lower rate.
+
+The timing of your short sale matters. If you borrow when demand is high
+for a short time, the lease rate will be highest. If you borrow for a
+longer period that includes a high demand season, the average lease rate
+over that time will be higher too. If you borrow only during low demand
+times, you'll probably get a lower lease rate.
+
+\subsection{(d)}\label{d}
+
+Here, the lease rate will relate to the production season, and how long
+you borrow will affect the rate. When production is high and demand is
+steady, there are lots of new widgets. Merchants will be happy to lend
+them out at a low lease rate, maybe even close to zero. When production
+is low (off-season), widgets become less common in terms of new supply.
+Even with steady demand, this limited production can make widgets more
+valuable. The lease rate will likely increase when production is low.
+
+If you borrow for a short time during the production off-season, you
+will likely pay the highest lease rate. Borrowing for a period that
+includes the off-season will mean a higher average rate. Borrowing only
+during peak production will get you the lowest rates.
+
+\subsection{(e)}\label{e}
+
+If widgets can't be stored, the lease rate becomes much more unstable
+and depends heavily on the immediate balance of supply and demand.
+Seasonal effects in demand or production become much stronger. If demand
+is higher than current production, lease rates can jump up a lot because
+borrowing is the only way to meet needs. If production is higher than
+demand, lease rates can drop sharply, maybe even become negative to
+encourage widgets to move out. The lease rate will change a lot with any
+small changes in demand or production because there's no stored
+inventory to smooth things out. It's less likely the average lease rate
+will be near zero; it will be more of a key factor in balancing supply
+and demand day to day.
+
+    \section{4}\label{section}
+
+\subsection{(a)}\label{a}
+
+To find the no-arbitrage forward price for delivery in 9 months, we can
+use the formula \(F_0 = S_0 e^{rT}\). Here, the current spot price
+\(S_0\) is \$1100, the continuously compounding risk-free rate \(r\) is
+5\% or 0.05, and the time to delivery \(T\) is 9 months, or 0.75 years.
+Plugging these values in, we calculate
+\(F_0 = 1100 \times e^{(0.05 \times 0.75)}\), which is approximately
+\(1100 \times e^{0.0375}\). Evaluating this, we get about
+\(1100 \times 1.038208\), resulting in a forward price of approximately
+\$1142.03. Therefore, the no-arbitrage forward price for delivery in 9
+months is about \$1142.03.
+
+\subsection{(b)}\label{b}
+
+If a customer wishes to enter a short index futures position and you, as
+the market-maker, take the opposite long position, you can hedge this
+risk by creating a synthetic short forward position. To do this, you
+would first short the S\&R Index, effectively selling \$1100 worth of
+it. Then, you would take the \$1100 proceeds from this short sale and
+invest them at the risk-free rate of 5\% per annum, compounded
+continuously, for the 9-month duration. Let's see how this works as a
+hedge. At time 0, you enter into a long forward contract, short sell the
+S\&R index and receive \$1100, and invest that \$1100 at the risk-free
+rate. Now consider the value at delivery in 9 months. Let \(S_T\) be the
+spot price at that time. The payoff from your long forward contract will
+be \(S_T - 1142.03\). The investment of \$1100 will have grown to
+\(1100 \times e^{0.05 \times 0.75}\), which is approximately \$1142.03.
+Finally, you need to cover your short index position, which will cost
+you \(S_T\). The net value at delivery is then the sum of these:
+\((S_T - 1142.03) + 1142.03 - S_T\), which simplifies to 0. This shows
+that regardless of the spot price \(S_T\) at delivery, your net position
+will have a value of zero, demonstrating a risk-free hedge.
+
+\subsection{(c)}\label{c}
+
+If a customer wishes to enter a long index futures position, and you
+take the opposite short position as the market-maker, you can hedge this
+short forward position by creating a synthetic long forward. The
+strategy here is to buy the S\&R Index, purchasing \$1100 worth, and
+finance this purchase by borrowing \$1100 at the risk-free rate of 5\%
+per annum, continuously compounded, for 9 months. Let's examine how this
+hedges. At time 0, you enter into a short forward contract, buy the S\&R
+index costing \$1100, and borrow \$1100 to pay for it. At delivery in 9
+months, again let \(S_T\) be the spot price. The payoff from your short
+forward contract will be \(1142.03 - S_T\). The value of the S\&R index
+you bought is now \(S_T\). And you will need to repay the borrowed
+amount, which has grown to \(1100 \times e^{0.05 \times 0.75}\), or
+approximately \$1142.03. The net value at delivery is the sum of these:
+\((1142.03 - S_T) + S_T - 1142.03\), which also simplifies to 0. This
+demonstrates that this strategy also creates a risk-free hedge, with a
+net value of zero at delivery regardless of the spot price \(S_T\).
+
+    \section{5}\label{section}
+
+\subsection{(a)}\label{a}
+
+A forward curve for oil where the forward prices decrease as the
+maturity increases and are below the spot price is called an inverted
+forward curve or a curve in backwardation.
+
+To estimate the lease rate for different maturities, we can use the cost
+of carry model and the given forward prices and interest rates. We can
+calculate the approximate lease rate for each maturity using the
+formula: \(l = r - \frac{1}{T} \ln(F_0 / S_0)\).
+
+For the 3-month maturity, the lease rate is approximately 9.69\% per
+annum. For the 6-month maturity, it is about 8.40\% per annum. For the
+1-year maturity, it's around 6.42\% per annum. For the 3-year maturity,
+approximately 3.45\% per annum. And for the 5-year maturity, it is about
+3.77\% per annum.
+
+The lease rate is positive and generally decreases as the maturity
+extends, suggesting the market values immediate oil availability more
+highly, and this premium diminishes over time.
+
+\subsection{(b)}\label{b}
+
+Several factors could explain this inverted forward curve for oil. One
+key reason is a high convenience yield driven by short-term supply
+concerns. If there are worries about immediate oil availability due to
+geopolitical events or production issues, market participants might
+value having physical oil right now, leading to a higher spot price
+compared to future delivery prices.
+
+Another reason could be expectations that oil prices will fall in the
+future. If the market anticipates increased future supply or decreased
+demand, perhaps due to new energy technologies or economic shifts, then
+forward prices for later delivery would be lower to reflect these
+expectations.
+
+Storage constraints could also play a role. If storing oil for longer
+periods becomes more costly or difficult, it might push down
+longer-dated forward prices relative to the spot price.
+
+Market sentiment and risk aversion can also contribute. In uncertain
+times, holding physical oil might be seen as less risky than holding
+longer-term contracts, again pushing spot prices up and forward prices
+down. It's likely a combination of these factors that results in the
+observed inverted forward curve.
+
+\subsection{(c)}\label{c}
+
+Even if oil forward prices seem out of line, arbitrage can be difficult.
+Transaction costs like fees and bid-ask spreads reduce profits. Storage
+for physical oil is expensive and complex. Transportation and logistics
+add further costs. Arbitrage takes time, and prices can move unfavorably
+before it's complete due to market volatility. Counterparty risk in
+forward contracts also exists.
