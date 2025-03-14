@@ -1,0 +1,71 @@
+
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+
+Here is the binomial tree:
+
+
+\begin{tikzpicture}[
+    x=2.5cm,  % Horizontal spacing
+    y=1.2cm,  % Vertical spacing
+    font=\footnotesize, % Smaller font
+    every node/.style={align=center} % Center-align text in nodes
+]
+
+\node at (0,0) (node00) {$49.999$\\$F^p = 49.999$\\$4.408$};
+\draw (node00) -- (node10);
+\draw (node00) -- (node11);
+\node at (1,0) (node10) {$58.606$\\$F^p = 58.606$\\$2.013$};
+\draw (node10) -- (node20);
+\draw (node10) -- (node21);
+\node at (1,-1) (node11) {$46.937$\\$F^p = 46.937$\\$6.612$};
+\draw (node11) -- (node21);
+\draw (node11) -- (node22);
+\node at (2,0) (node20) {$66.081$\\$F^p = 66.081$\\$0.513$};
+\draw (node20) -- (node30);
+\draw (node20) -- (node31);
+\node at (2,-1) (node21) {$52.874$\\$F^p = 52.874$\\$3.381$};
+\draw (node21) -- (node31);
+\draw (node21) -- (node32);
+\node at (2,-2) (node22) {$42.390$\\$F^p = 42.390$\\$9.595$};
+\draw (node22) -- (node32);
+\draw (node22) -- (node33);
+\node at (3,0) (node30) {$74.548$\\$F^p = 74.548$\\$0.000$};
+\draw (node30) -- (node40);
+\draw (node30) -- (node41);
+\node at (3,-1) (node31) {$59.600$\\$F^p = 59.600$\\$0.979$};
+\draw (node31) -- (node41);
+\draw (node31) -- (node42);
+\node at (3,-2) (node32) {$47.734$\\$F^p = 47.734$\\$5.574$};
+\draw (node32) -- (node42);
+\draw (node32) -- (node43);
+\node at (3,-3) (node33) {$38.316$\\$F^p = 38.316$\\$13.329$};
+\draw (node33) -- (node43);
+\draw (node33) -- (node44);
+\node at (4,0) (node40) {$82.041$\\$F^p = 82.041$\\$0.000$};
+\draw (node40) -- (node50);
+\draw (node40) -- (node51);
+\node at (4,-1) (node41) {$65.123$\\$F^p = 65.123$\\$0.000$};
+\draw (node41) -- (node51);
+\draw (node41) -- (node52);
+\node at (4,-2) (node42) {$51.694$\\$F^p = 51.694$\\$1.866$};
+\draw (node42) -- (node52);
+\draw (node42) -- (node53);
+\node at (4,-3) (node43) {$41.034$\\$F^p = 41.034$\\$8.966$};
+\draw (node43) -- (node53);
+\draw (node43) -- (node54);
+\node at (4,-4) (node44) {$32.572$\\$F^p = 32.572$\\$17.428$};
+\draw (node44) -- (node54);
+\draw (node44) -- (node55);
+\node at (5,0) (node50) {$92.854$\\$F^p = 92.854$\\$0.000$};
+\node at (5,-1) (node51) {$73.706$\\$F^p = 73.706$\\$0.000$};
+\node at (5,-2) (node52) {$58.507$\\$F^p = 58.507$\\$0.000$};
+\node at (5,-3) (node53) {$46.442$\\$F^p = 46.442$\\$3.558$};
+\node at (5,-4) (node54) {$36.865$\\$F^p = 36.865$\\$13.135$};
+\node at (5,-5) (node55) {$29.263$\\$F^p = 29.263$\\$20.737$};
+
+\end{tikzpicture}
+
+
+\end{document}
